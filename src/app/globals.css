@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body base style */
+body {
+  @apply bg-white text-gray-800 antialiased;
+}
+
+/* Container utility */
+.container-custom {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+/* Section spacing */
+.section-padding {
+  @apply py-24;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition;
+}
+
+.btn-secondary {
+  @apply border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-100 transition;
+}
+
+/* Card style */
+.card {
+  @apply bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition;
+}
+
+/* Heading style */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-center;
+}
+
+/* Paragraph style */
+.section-description {
+  @apply text-gray-600 text-center mt-4 max-w-xl mx-auto;
+}
