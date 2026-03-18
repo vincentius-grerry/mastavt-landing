@@ -5,8 +5,8 @@
   "homepage": "https://mastavt.com/",
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build --webpack",
+    "start": "next start --webpack",
     "jest-clear": "jest --clearCache",
     "test": "jest",
     "test:coverage": "jest --coverage",
