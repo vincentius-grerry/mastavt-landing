@@ -47,7 +47,7 @@ const Hero = () => (
               className="flex items-center justify-center px-5 py-3 rounded-full border border-gray-300 hover:bg-gray-100 transition"
             >
               <span className="text-sm sm:text-base">
-                Call us <strong className="ml-1">+6281229403338</strong>
+                Call us <strong className="ml-1">+6281215461588</strong>
               </span>
             </Link>
           </div>
