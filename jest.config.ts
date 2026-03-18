@@ -15,6 +15,11 @@ const config: Config = {
   coverageDirectory: 'coverage',
   collectCoverageFrom: ['app/**/*.{ts,tsx}', '!app/**/*.d.ts', '!app/**/index.ts', '!app/**/types.ts'],
   coverageReporters: ['html', 'text-summary', 'lcov', 'cobertura', 'json-summary'],
+  moduleNameMapper: {
+    '^.+\\.(css|sass|scss)$': 'identity-obj-proxy',
+    '^@/(.*)$': '<rootDir>/$1',
+  },
+  transformIgnorePatterns: ['/node_modules/(?!(@mui|@babel|fbjs))'],
 };
 
 export default config;
