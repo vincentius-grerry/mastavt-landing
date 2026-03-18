@@ -8,16 +8,13 @@ import importPlugin from 'eslint-plugin-import';
 import prettier from 'eslint-plugin-prettier';
 
 export default tseslint.config(
-  { ignores: ['build', '.next', 'node_modules', '**/__test__'] },
+  {ignores: ['build', '.next', 'node_modules', '**/__test__']},
   {
     files: ['**/*.{ts,tsx,js,jsx}'],
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
     languageOptions: {
       ecmaVersion: 2022,
-      globals: globals.browser
+      globals: globals.browser,
     },
 
     plugins: {
@@ -25,27 +22,27 @@ export default tseslint.config(
       'react-hooks': reactHooks,
       import: importPlugin,
       'jsx-a11y': jsxA11y,
-      prettier
+      prettier,
     },
 
     settings: {
       react: {
-        version: 'detect'
+        version: 'detect',
       },
       'import/resolver': {
         typescript: true,
         node: {
-          extensions: ['.js', '.jsx', '.ts', '.tsx']
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
         alias: {
           map: [
-            ['@', './src'],
-            ['@components', './src/components'],
-            ['@utils', './src/utils']
+            ['@', './app'],
+            ['@components', './app/components'],
+            ['@utils', './app/utils'],
           ],
-          extensions: ['.ts', '.tsx', '.js', '.jsx']
-        }
-      }
+          extensions: ['.ts', '.tsx', '.js', '.jsx'],
+        },
+      },
     },
 
     rules: {
@@ -53,7 +50,7 @@ export default tseslint.config(
       semi: ['warn', 'always'],
       quotes: ['warn', 'single'],
       indent: ['warn', 2],
-      'no-console': ['warn', { allow: ['warn', 'error'] }],
+      'no-console': ['warn', {allow: ['warn', 'error']}],
       'prefer-const': 'warn',
       'comma-dangle': ['error', 'always-multiline'],
 
@@ -90,9 +87,9 @@ export default tseslint.config(
           tabWidth: 2,
           printWidth: 120,
           bracketSpacing: false,
-          endOfLine: 'auto'
-        }
-      ]
-    }
-  }
+          endOfLine: 'auto',
+        },
+      ],
+    },
+  },
 );
