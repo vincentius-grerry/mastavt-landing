@@ -2,14 +2,14 @@ import Link from 'next/link';
 import TextRotator from '@/utils/TextRotator';
 import Background from '@/components/Background';
 import Section from '@/components/Section';
-import NavbarTwoColumns from '@/components/NavbarTwoColumns';
+import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import {Typography} from '@mui/material';
 
 const Hero = () => (
   <Background image="https://mastavt.com/sw-content/slider/slider-f6f84fc0f41d7101fe99487e720d27e2.jpg">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logoUrl={'https://mastavt.com/sw-content/sw-1.png'}>
+      <Navbar logoUrl={'https://mastavt.com/sw-content/sw-1.png'}>
         <li>
           <Link
             href="#"
@@ -18,7 +18,7 @@ const Hero = () => (
             Lets Talk
           </Link>
         </li>
-      </NavbarTwoColumns>
+      </Navbar>
     </Section>
 
     <Section yPadding="py-6">

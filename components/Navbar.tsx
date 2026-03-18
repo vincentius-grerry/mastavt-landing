@@ -6,7 +6,7 @@ type INavbarProps = {
   children: ReactNode;
 };
 
-const NavbarTwoColumns = ({logoUrl, children}: INavbarProps) => (
+const Navbar = ({logoUrl, children}: INavbarProps) => (
   <div className="flex flex-col items-center text-center md:flex-row md:text-left md:justify-between">
     <div className="flex items-center">
       <Image src={logoUrl} width={141} height={75} alt="logo" />
@@ -18,4 +18,4 @@ const NavbarTwoColumns = ({logoUrl, children}: INavbarProps) => (
   </div>
 );
 
-export default NavbarTwoColumns;
+export default Navbar;
