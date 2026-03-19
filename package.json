@@ -2,7 +2,7 @@
   "name": "mastavt-landing-page",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mastavt.com/",
+  "homepage": "https://mastavt-landing.vercel.app/",
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",

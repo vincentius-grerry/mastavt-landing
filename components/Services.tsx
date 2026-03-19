@@ -1,3 +1,4 @@
+'use client';
 import InfoCard from '@/components/InfoCard';
 import Section from '@/components/Section';
 import {Google, Instagram, Laptop, NetworkCell, Settings, StackedLineChart} from '@mui/icons-material';

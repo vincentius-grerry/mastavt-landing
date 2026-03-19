@@ -1,6 +1,7 @@
+'use client';
+import Link from 'next/link';
 import InfoCard from '@/components/InfoCard';
 import Section from '@/components/Section';
-import Link from 'next/link';
 
 const Portfolio = () => {
   const portfolioItems = [

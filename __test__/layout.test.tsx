@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import RootLayout, { metadata } from '../app/layout';
+import RootLayout, { metadata } from '@/app/layout';
 import { AppConfig } from '@/utils/AppConfig';
 
 describe('RootLayout and Metadata', () => {

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import InfoCard from '../components/InfoCard';
+import InfoCard from '@/components/InfoCard';
 
 describe('InfoCard Component', () => {
   const mockData = {

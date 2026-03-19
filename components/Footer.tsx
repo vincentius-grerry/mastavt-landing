@@ -1,5 +1,5 @@
+'use client';
 import Link from 'next/link';
-
 import Background from '@/components/Background';
 import FooterContent from '@/contents/footer/FooterContent';
 import FooterCopyright from '@/contents/footer/FooterCopyright';

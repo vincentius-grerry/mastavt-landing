@@ -1,3 +1,4 @@
+'use client';
 import TestimoniDetail from '@/contents/testimoni/TestimonialCard ';
 import Section from '@/components/Section';
 
